@@ -7,6 +7,15 @@ Tool scans the project directory, detects Ansible role structure, and generates 
 - task files (../tasks/*.yml)
 - default variables (../default/main.yml)
 - project structure
+The tool is packaged as a Docker image to avoid local Python dependency issues.
+
+## Features
+- Auto-detect Ansible roles
+- Generate project structure (tree)
+- List Ansible tasks
+- Document default variables
+- Update README.md automatically
+- No local Python setup required
 
 ### Auto README.md strucrure
 
@@ -40,18 +49,6 @@ Tool scans the project directory, detects Ansible role structure, and generates 
 > *just reminder how to run this role*
 
 Look example how it works: [Auto generated README](https://github.com/rayneadm/ansible-prepare-os/blob/main/README.md)
-
-The tool is packaged as a Docker image to avoid local Python dependency issues.
-
-
-## Features
-- Auto-detect Ansible roles
-- Generate project structure (tree)
-- List Ansible tasks
-- Document default variables
-- Update README.md automatically
-- No local Python setup required
-
 
 ## Requirements
 - Installed [Docker](https://docs.docker.com/engine/install/)
