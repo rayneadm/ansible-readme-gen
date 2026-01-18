@@ -8,6 +8,23 @@ Tool scans the project directory, detects Ansible role structure, and generates 
 - default variables (../default/main.yml)
 - project structure
 
+## README strucrure
+
+> **Ansible role name**
+> **Project structure**
+> **Ansible task list**
+> **Role tasks** and description
+> > **packages.yml**
+> > - - **Install packages for Debian and RHEL OS family**
+> > - - To change list of packages edit: default/main.yml
+> > - - To run this task use tag -t packages
+> > - Update apt cache (Debian)
+> > - Install common packages
+> > - Install Debian packages
+> > - Install RHEL packages
+> **Default variables**
+> **How to run**
+
 Look example how it works: [Auto generated README](https://github.com/rayneadm/ansible-prepare-os/blob/main/README.md)
 
 The tool is packaged as a Docker image to avoid local Python dependency issues.
