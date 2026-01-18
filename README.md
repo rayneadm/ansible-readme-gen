@@ -1,13 +1,14 @@
 # ansible-readme-gen
 
 **ansible-readme-gen** is a simple tool to automatically generate **README.md** files for Ansible roles.   
-Look example how it works: [Auto generated README](https://github.com/rayneadm/ansible-prepare-os/blob/main/README.md)
 
 Tool scans the project directory, detects Ansible role structure, and generates documentation based on:
 - role metadata (meta/main.yml)
 - task files (../tasks/*.yml)
 - default variables (../default/main.yml)
 - project structure
+
+Look example how it works: [Auto generated README](https://github.com/rayneadm/ansible-prepare-os/blob/main/README.md)
 
 The tool is packaged as a Docker image to avoid local Python dependency issues.
 
@@ -27,7 +28,6 @@ The tool is packaged as a Docker image to avoid local Python dependency issues.
 - Added descriptions in the task
 
 ### For example:
-
 ```yaml
 .# Run this tool in the root of ansible role
 ├── playbook.yml
@@ -49,8 +49,9 @@ The tool is packaged as a Docker image to avoid local Python dependency issues.
 
 6 directories, 12 files
 ```
-### About description format
 
+### About description format
+This one an example, how to discribe you playbooks:   
 ```yaml
 # @doc: Install custom motd
 #  - Also install some varables
@@ -65,7 +66,7 @@ The tool is packaged as a Docker image to avoid local Python dependency issues.
 ```
 
 Just add descritpion in the head of task.    
-First line have to contain flag **@doc**, for every thing alse you can use **Markdown** format.  
+First line have to contain flag **@doc**, for the next lines you can use **Markdown** format.  
 Look [examples](https://github.com/rayneadm/ansible-prepare-os/blob/main/prepare/tasks/profile.yml) of description.    
 
 ## Usage
