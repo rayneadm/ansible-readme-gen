@@ -22,9 +22,9 @@ The tool is packaged as a Docker image to avoid local Python dependency issues.
 > #### Ansible role name
 > *role name and description from metadata*
 > #### Project structure
-> *list of* **tree** command
+> *list of* **tree** *command*
 > #### Ansible task list
-> *list of command **ansible-playbook playbook.yml --task--list**
+> *list of command* **ansible-playbook playbook.yml --task--list**
 > #### Role tasks 
 > *and description lile below*
 > > ##### main.yml
@@ -38,7 +38,7 @@ The tool is packaged as a Docker image to avoid local Python dependency issues.
 > > ##### packages.yml
 > > - **Install packages for Debian and RHEL OS family**
 > > - - To change list of packages edit: default/main.yml
-> > - - To run this task use tag -t packages
+> > - - To run this task use tag `-t packages`
 > > - Update apt cache (Debian)
 > > - Install common packages
 > > - Install Debian packages
@@ -56,28 +56,28 @@ Look example how it works: [Auto generated README](https://github.com/rayneadm/a
 - Added descriptions in the task
 
 ### For example:
-```yaml
-# Run this tool in the root of ansible role
-.
-├── playbook.yml
-├── prepare
-│   ├── defaults
-│   │   └── main.yml
-│   ├── files
-│   │   ├── custom
-│   │   └── motd
-│   ├── meta
-│   │   └── main.yml
-│   └── tasks
-│       ├── main.yml  # Add description in this files
-│       ├── packages.yml # and there
-│       ├── profile.yml # ...
-│       ├── root.yml # ...
-│       └── users.yml # ...
-└── README.md # Will be generet in the root of ansible role
-
-6 directories, 12 files
-```
+> ```yaml
+> # Run this tool in the root of ansible role
+> .
+> ├── playbook.yml
+> ├── prepare
+> │   ├── defaults
+> │   │   └── main.yml
+> │   ├── files
+> │   │   ├── custom
+> │   │   └── motd
+> │   ├── meta
+> │   │   └── main.yml
+> │   └── tasks
+> │       ├── main.yml  # Add description in this files
+> │       ├── packages.yml # and there
+> │       ├── profile.yml # ...
+> │       ├── root.yml # ...
+> │       └── users.yml # ...
+> └── README.md # Will be generet in the root of ansible role
+>
+> 6 directories, 12 files
+> ```
 
 ### About description format
 This one an example, how to discribe you playbooks:   
