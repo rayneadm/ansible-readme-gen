@@ -81,18 +81,16 @@ Look example how it works: [Auto generated README](https://github.com/rayneadm/a
 
 ### About description format
 This one an example, how to discribe you playbooks:   
-```yaml
-# @doc: Install custom motd
-#  - Also install some varables
-#  - *To run this task use tag* `-t profile`
-
----
-- name: Deploy global shell environment
-  ansible.builtin.copy:
-...
-..
-.
-```
+> ```yaml
+> # @doc: Install custom motd
+> #  - Also install some varables
+> #  - *To run this task use tag* `-t profile`
+> 
+> ---
+> - name: Deploy global shell environment
+>  ansible.builtin.copy:
+> ...
+> ```
 
 Just add descritpion in the head of task.    
 First line have to contain flag **@doc**, for the next lines you can use **Markdown** format.  
