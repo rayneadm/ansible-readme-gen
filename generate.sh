@@ -1,3 +1,3 @@
 #!/bin/bash
-
-docker run --rm -v "$PWD:/data": -w /data ansible-readme-gen
+docker pull rayneadm/ansible-readme-gen:latest
+docker run --rm -v "$PWD:/data" -w /data rayneadm/ansible-readme-gen
