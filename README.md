@@ -8,14 +8,23 @@ Tool scans the project directory, detects Ansible role structure, and generates 
 - default variables (../default/main.yml)
 - project structure
 
-## README strucrure
+### README.md strucrure
 
-> **Ansible role name**
-> **Project structure**
-> **Ansible task list**
-> **Role tasks** and description
-> > **packages.yml**
-> > - - **Install packages for Debian and RHEL OS family**
+> ### Ansible role name
+> ### Project structure
+> ### Ansible task list
+> ### Role tasks 
+> *and description lile below*
+> > #### main.yml
+> > - **List all tasks of this role**
+> > - - This is the better place for include your jobs
+> > - Setting for root
+> > - Setting for users
+> > - Profile tings
+> > - Install packages
+> >
+> > #### packages.yml
+> > - **Install packages for Debian and RHEL OS family**
 > > - - To change list of packages edit: default/main.yml
 > > - - To run this task use tag -t packages
 > > - Update apt cache (Debian)
