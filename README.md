@@ -97,7 +97,7 @@ docker run --rm -v "$PWD:/data" -w /data rayneadm/ansible-readme-gen
 ```
 
 ## Ansible inventory ..
-If you dont have inventory file in your projekt when you run this tool, you'll see *Ansible warning*.
+If you dont have inventory file in your project when you run this tool, you'll see *Ansible warning*.
 ```bash
 [WARNING]: Unable to parse /data/inventory.yml as an inventory source
 [WARNING]: No inventory was parsed, only implicit localhost is available
