@@ -41,7 +41,7 @@ The tool is packaged as a Docker image to avoid local Python dependency issues.
 │   ├── meta
 │   │   └── main.yml
 │   └── tasks
-│       ├── main.yml  # Add deskription in this files
+│       ├── main.yml  # Add description in this files
 │       ├── packages.yml # and there
 │       ├── profile.yml # ...
 │       ├── root.yml # ...
