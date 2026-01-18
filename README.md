@@ -1,9 +1,9 @@
 # ansible-readme-gen
 
-**ansible-readme-gen** is a simple tool to automatically generate README.md files for Ansible roles.   
-How it looks [Auto generated README](https://github.com/rayneadm/ansible-prepare-os/blob/main/README.md)
+**ansible-readme-gen** is a simple tool to automatically generate **README.md** files for Ansible roles.   
+Look example how it works: [Auto generated README](https://github.com/rayneadm/ansible-prepare-os/blob/main/README.md)
 
-It scans the project directory, detects Ansible role structure, and generates documentation based on:
+Tool scans the project directory, detects Ansible role structure, and generates documentation based on:
 - role metadata (meta/main.yml)
 - task files (../tasks/*.yml)
 - default variables (../default/main.yml)
@@ -25,13 +25,11 @@ The tool is packaged as a Docker image to avoid local Python dependency issues.
 - Installed [Docker](https://docs.docker.com/engine/install/)
 - Ansible role structure in the current directory
 - Added descriptions in the task
+
 ### For example:
 
-`% pwd`   
-../ansible-prepare-os   
-`% tree`   
 ```yaml
-.
+.# Run this tool in the root of ansible role
 ├── playbook.yml
 ├── prepare
 │   ├── defaults
@@ -47,7 +45,7 @@ The tool is packaged as a Docker image to avoid local Python dependency issues.
 │       ├── profile.yml # ...
 │       ├── root.yml # ...
 │       └── users.yml # ...
-└── README.md
+└── README.md # Will be generet in the root of ansible role
 
 6 directories, 12 files
 ```
@@ -66,9 +64,9 @@ The tool is packaged as a Docker image to avoid local Python dependency issues.
 .
 ```
 
-Just add descritpion in the head of task. 
-First line have to contain flag **@doc**, for every thing alse you can use 'Markdown format'  
-Look [examples](https://github.com/rayneadm/ansible-prepare-os/blob/main/prepare/tasks/profile.yml)    
+Just add descritpion in the head of task.    
+First line have to contain flag **@doc**, for every thing alse you can use **Markdown** format.  
+Look [examples](https://github.com/rayneadm/ansible-prepare-os/blob/main/prepare/tasks/profile.yml) of description.    
 
 ## Usage
 
@@ -95,19 +93,4 @@ git clone git@github.com:rayneadm/ansible-readme-gen.git
 cd ansible-readme-gen
 docker build -t rayneadm/ansible-readme-gen:latest .
 docker run --rm -v "$PWD:/data" -w /data rayneadm/ansible-readme-gen
-```
-
-
-⸻
-
-## Project structure
-```yaml
-.
-├── app
-│   └── generate_readme.py
-├── Dockerfile
-├── generate.sh
-├── LICENSE
-├── README.md
-└── requirements.txt
 ```
