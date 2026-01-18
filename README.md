@@ -20,15 +20,15 @@ The tool is packaged as a Docker image to avoid local Python dependency issues.
 
 ### Auto README.md strucrure
 
-> ### Ansible role name
+> #### Ansible role name
 > *role name and description from metadata*
-> ### Project structure
+> #### Project structure
 > *list of* **tree** command
-> ### Ansible task list
+> #### Ansible task list
 > *list of command **ansible-playbook playbook.yml --task--list**
-> ### Role tasks 
+> #### Role tasks 
 > *and description lile below*
-> > #### main.yml
+> > ##### main.yml
 > > - **List all tasks of this role**
 > > - - This is the better place for include your jobs
 > > - Setting for root
@@ -36,7 +36,7 @@ The tool is packaged as a Docker image to avoid local Python dependency issues.
 > > - Profile tings
 > > - Install packages
 > >
-> > #### packages.yml
+> > ##### packages.yml
 > > - **Install packages for Debian and RHEL OS family**
 > > - - To change list of packages edit: default/main.yml
 > > - - To run this task use tag -t packages
@@ -44,9 +44,9 @@ The tool is packaged as a Docker image to avoid local Python dependency issues.
 > > - Install common packages
 > > - Install Debian packages
 > > - Install RHEL packages
-> ### **Default variables**
+> #### **Default variables**
 > *Varibles from ../default/main.yml*
-> ### **How to run**
+> #### **How to run**
 > *just reminder how to run this role*
 
 Look example how it works: [Auto generated README](https://github.com/rayneadm/ansible-prepare-os/blob/main/README.md)
