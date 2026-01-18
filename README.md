@@ -18,8 +18,7 @@ The tool is packaged as a Docker image to avoid local Python dependency issues.
 - Update README.md automatically
 - No local Python setup required
 
-### Auto README.md strucrure
-
+### ansible-readme-gen README.md strucrure
 > #### Ansible role name
 > *role name and description from metadata*
 > #### Project structure
