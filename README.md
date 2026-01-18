@@ -1,6 +1,6 @@
 # ansible-readme-gen
 
-ansible-readme-gen is a simple tool to automatically generate README.md files for Ansible roles.
+**ansible-readme-gen** is a simple tool to automatically generate README.md files for Ansible roles.   
 How it looks [Auto generated README](https://github.com/rayneadm/ansible-prepare-os/blob/main/README.md)
 
 It scans the project directory, detects Ansible role structure, and generates documentation based on:
@@ -11,7 +11,6 @@ It scans the project directory, detects Ansible role structure, and generates do
 
 The tool is packaged as a Docker image to avoid local Python dependency issues.
 
-⸻
 
 ## Features
 - Auto-detect Ansible roles
@@ -21,7 +20,6 @@ The tool is packaged as a Docker image to avoid local Python dependency issues.
 - Update README.md automatically
 - No local Python setup required
 
-⸻
 
 ## Requirements
 - Installed [Docker](https://docs.docker.com/engine/install/)
@@ -29,9 +27,9 @@ The tool is packaged as a Docker image to avoid local Python dependency issues.
 
 ### For example:
 
-`% pwd`
-../ansible-prepare-os
-`% tree`
+`% pwd`   
+../ansible-prepare-os   
+`% tree`   
 ```yaml
 .
 ├── playbook.yml
@@ -55,7 +53,6 @@ The tool is packaged as a Docker image to avoid local Python dependency issues.
 ```
 
 
-⸻
 
 ## Usage
 
@@ -67,7 +64,6 @@ or from GitHub Container Registry:
 ```bash
 docker pull ghcr.io/rayneadm/ansible-readme-gen:latest
 ```
-- But also you can make you own local image
 
 Run the generator in your project directory:
 ```bash
@@ -76,6 +72,7 @@ docker run --rm -v "$PWD:/data" -w /data rayneadm/ansible-readme-gen
 The README.md file will be created or updated in the current directory.
 
 
+### But also you can make you own local image
 
 ```bash
 git clone git@github.com:rayneadm/ansible-readme-gen.git
