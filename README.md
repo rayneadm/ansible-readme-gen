@@ -79,7 +79,7 @@ Look example how it works: [Auto generated README](https://github.com/rayneadm/a
 > 6 directories, 12 files
 > ```
 
-### About description format
+### About tasks description format
 This one an example, how to discribe you playbooks:   
 > ```yaml
 > # @doc: Install custom motd
