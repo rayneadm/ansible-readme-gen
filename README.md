@@ -29,7 +29,8 @@ The tool is packaged as a Docker image to avoid local Python dependency issues.
 
 ### For example:
 ```yaml
-.# Run this tool in the root of ansible role
+# Run this tool in the root of ansible role
+.
 ├── playbook.yml
 ├── prepare
 │   ├── defaults
