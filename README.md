@@ -7,6 +7,7 @@ Tool scans the project directory, detects Ansible role structure, and generates 
 - task files (../tasks/*.yml)
 - default variables (../default/main.yml)
 - project structure   
+
 The tool is packaged as a Docker image to avoid local Python dependency issues.
 
 ## Features
