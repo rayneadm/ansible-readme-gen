@@ -47,7 +47,7 @@ The README.md file will be created or updated in the current directory.
 ⸻
 
 ## Project structure
-
+```yaml
 .
 ├── app
 │   └── generate_readme.py
@@ -56,3 +56,4 @@ The README.md file will be created or updated in the current directory.
 ├── LICENSE
 ├── README.md
 └── requirements.txt
+```
