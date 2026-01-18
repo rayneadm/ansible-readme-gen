@@ -8,11 +8,14 @@ Tool scans the project directory, detects Ansible role structure, and generates 
 - default variables (../default/main.yml)
 - project structure
 
-### README.md strucrure
+### Auto README.md strucrure
 
 > ### Ansible role name
+> *role name and description from metadata*
 > ### Project structure
+> *list of* **tree** command
 > ### Ansible task list
+> *list of command **ansible-playbook playbook.yml --task--list**
 > ### Role tasks 
 > *and description lile below*
 > > #### main.yml
@@ -31,8 +34,10 @@ Tool scans the project directory, detects Ansible role structure, and generates 
 > > - Install common packages
 > > - Install Debian packages
 > > - Install RHEL packages
-> **Default variables**
-> **How to run**
+> ### **Default variables**
+> *Varibles from ../default/main.yml*
+> ### **How to run**
+> *just reminder how to run this role*
 
 Look example how it works: [Auto generated README](https://github.com/rayneadm/ansible-prepare-os/blob/main/README.md)
 
