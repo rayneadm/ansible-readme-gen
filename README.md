@@ -24,7 +24,7 @@ The tool is packaged as a Docker image to avoid local Python dependency issues.
 ## Requirements
 - Installed [Docker](https://docs.docker.com/engine/install/)
 - Ansible role structure in the current directory
-
+- Added descriptions in the task
 ### For example:
 
 `% pwd`   
@@ -42,17 +42,33 @@ The tool is packaged as a Docker image to avoid local Python dependency issues.
 │   ├── meta
 │   │   └── main.yml
 │   └── tasks
-│       ├── main.yml
-│       ├── packages.yml
-│       ├── profile.yml
-│       ├── root.yml
-│       └── users.yml
+│       ├── main.yml  # Add deskription in this files
+│       ├── packages.yml # and there
+│       ├── profile.yml # ...
+│       ├── root.yml # ...
+│       └── users.yml # ...
 └── README.md
 
 6 directories, 12 files
 ```
+### About description format
 
+```yaml
+# @doc: Install custom motd
+#  - Also install some varables
+#  - *To run this task use tag* `-t profile`
 
+---
+- name: Deploy global shell environment
+  ansible.builtin.copy:
+...
+..
+.
+```
+
+Just add descritpion in the head of task. 
+First line have to contain flag **@doc**, for every thing alse you can use 'Markdown format'  
+Look [examples](https://github.com/rayneadm/ansible-prepare-os/blob/main/prepare/tasks/profile.yml)    
 
 ## Usage
 
