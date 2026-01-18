@@ -48,7 +48,7 @@ The tool is packaged as a Docker image to avoid local Python dependency issues.
 > #### **How to run**
 > *just reminder how to run this role*
 
-[Look example how it works: auto-generated README](https://github.com/rayneadm/ansible-prepare-os/blob/main/README.md)
+[Look EXAMPLE how does it work](https://github.com/rayneadm/ansible-prepare-os/blob/main/README.md)
 
 ## Requirements
 - Installed [Docker](https://docs.docker.com/engine/install/)
